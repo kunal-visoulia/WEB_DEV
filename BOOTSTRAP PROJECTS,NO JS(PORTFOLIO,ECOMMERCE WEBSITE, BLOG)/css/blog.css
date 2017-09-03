@@ -1,0 +1,43 @@
+body{background-color:ghostwhite;}
+.navbar a{color:white;}
+.nav li a:hover{background-color:orangered;}
+.navbar-custom{
+    position:absolute;
+    width:100%;
+}
+header{height: 450px;
+padding:100px 50px;
+    color:white;
+}
+.navbar a{font-size: 20px;}
+
+header h1{font-size: 50px;}
+#posts{
+    border-bottom: 1px solid red;
+}
+#posts h1{ font-weight: bold;}
+#posts h1 a{ color:black;
+text-decoration: none;}
+#posts h1 a:hover{ color:red;}
+.down-btn{padding:50px 0;
+}
+.btn{border-radius: 0;}
+.btn-default:hover{
+    background: #337AB7;
+    border:0;
+    color:white;
+}
+.nav-center{
+   
+    float:none;
+    display:table;
+    table-layout:fixed;
+    margin:0 auto;
+   
+    
+}
+.nav-center li a{color:black;}
+.nav-center li a:hover{ background: white;}
+.m_col{
+   -webkit-column-count: 3;
+}
