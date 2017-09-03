@@ -1,0 +1,124 @@
+body{ background-color:ghostwhite;}
+.container{width:960px;
+background-color: ghostwhite;
+margin:0 auto;
+}
+p{font-family: cursive;}
+.nav{list-style: none;
+margin:0;
+padding:0;
+text-align: center;}
+
+.nav li{float: left;
+text-align: center;
+margin-left: 1em;
+margin-right: 2em;
+   
+
+height:0.5em;
+padding-left: 0.2em;padding-right: 0.2em;
+min-width:6em;
+}
+
+.clear{clear: both;}
+
+header{background-color: lightgray;
+margin-bottom: 30px;
+box-shadow: 10px 10px 5px #888888;
+    height:210px;
+}
+
+#image{margin-bottom: 20px;}
+
+footer{color: aliceblue;
+background-color: black;
+text-align: right;
+height:50px;
+padding-right: 10px;
+padding-top: 0.1px;
+padding-bottom: 10px;
+margin-top: 20px;box-shadow: 10px 10px 5px #888888;}
+
+#welcomeMsg{background-color: lightgray;
+   width: 70%;
+padding: 15px;
+    margin-left: 10px;    margin-right: 5px;
+    float:left;box-shadow: 10px 10px 5px #888888;
+}
+
+#welcomeMsg h1{animation: move 5s infinite;
+position: relative;
+text-align: center;}
+
+#newsLetter{background-color: lightgray;
+    margin-left: 77%;
+    padding-top: 10px;
+    padding-left:10px;
+    height: 100px;box-shadow: 10px 10px 5px #888888;
+}
+#leftDiv,#rightDiv{background-color: lightgray;
+float:left;box-shadow: 10px 10px 5px #888888;
+margin-top: 40px;
+text-overflow: ellipsis;
+ white-space: normal;
+  overflow: scroll;}
+
+#leftDiv{width:45%;
+margin-right: 5%;
+height:200px;
+padding-left: 10px;}
+
+#leftDiv img{ max-height:100px;
+max-width:100px;
+float:right;}
+
+#rightDiv{width:45%;
+height:200px;
+padding-left: 10px;}
+
+#rightDiv img{ max-height:100px;
+max-width:100px;
+float:right;}
+
+.nav li a:link, .nav li a:visited{
+    text-decoration: none;box-shadow: 5px 5px 5px #888888;
+    display:block;background-color: cornflowerblue;
+    border-radius: 5px;
+    padding:5px;
+}
+
+.nav li a:hover{background-color: red;
+
+ /*animation: myrot 1s infinite;*/}
+
+/*animations*/
+
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in{opacity:0;
+    animation:fadein  1;
+animation-duration: 2s;
+    
+animation-fill-mode: forwards;}
+
+@keyframes myrot{
+    0%{transform: rotate(0deg);}
+      25%{transform: rotate(90deg);}
+      50%{transform: rotate(180deg);}
+      75%{transform: rotate(270deg);}
+      100%{transform: rotate(360deg);}
+}
+@keyframes move{0%{left:0px}
+      25%{left: 100px;}
+      50%{left: 200px;}
+      75%{left: 100px;}
+      100%{left: 0px;}
+    
+}
