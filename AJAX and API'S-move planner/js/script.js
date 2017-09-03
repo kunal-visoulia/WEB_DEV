@@ -35,7 +35,7 @@ $.getJSON(nyurl,function(data){
 });
      var wikiBaseUrl = 'http://en.wikipedia.org/w/api.php?format=json&action=opensearch&search=';
     var wikiUrl = wikiBaseUrl + city;
-    var wikiRequestTimeout = setTimeout(function(){
+    var wikiRequestTimeout = setTimeout(function(){//.error() fails with ajax()
         $wikiElem.text('Could not load wikipedia links');
     }, 8000);
 
